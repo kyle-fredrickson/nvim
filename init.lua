@@ -10,4 +10,3 @@ require("plugins.ntree")
 require("plugins.barbar")
 require("plugins.telescope")
 require("plugins.lsp")
-
