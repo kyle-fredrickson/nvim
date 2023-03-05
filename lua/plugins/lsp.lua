@@ -24,25 +24,21 @@ local on_attach = function(_, _)
 end
 
 require("lspconfig").clangd.setup {
-  on_attack = on_attach
+  on_attach = on_attach
 }
 
 require("lspconfig").hls.setup {
-  on_attack = on_attach
-}
-
-require("lspconfig").jsonls.setup {
-  on_attack = on_attach
+  on_attach = on_attach
 }
 
 require("lspconfig").pylsp.setup {
-  on_attack = on_attach
+  on_attach = on_attach
 }
 
 require("lspconfig").rust_analyzer.setup {
-  on_attack = on_attach
+  on_attach = on_attach
 }
 
 require("lspconfig").texlab.setup {
-  on_attack = on_attach
+  on_attach = on_attach
 }
