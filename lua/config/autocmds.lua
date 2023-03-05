@@ -11,9 +11,8 @@ vim.api.nvim_create_autocmd({ "BufWritePre", "FileWritePre" }, {
 })
 
 -- remove extra lines
--- Theres an issue here
 vim.api.nvim_create_autocmd({ "BufWritePre", "FileWritePre" }, {
-pattern = { "*" },
-command = [[%s/\n\{3,}/\r\r/ge]],
+  pattern = { "*" },
+  command = [[%s/\n\{3,}/\r\r/ge]],
 })
 
