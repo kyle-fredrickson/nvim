@@ -9,7 +9,7 @@ vim.opt.encoding = "utf-8"
 
 -- appearance
 vim.opt.number = true -- turns on absolute line numbers
-vim.opt.cursorline = true -- highlights line curson is on
+vim.opt.cursorline = true -- highlights line cursor is on
 vim.opt.list = true -- line for indent
 vim.opt.listchars:append("trail:·") -- trailing spaces are marked with a dot
 
