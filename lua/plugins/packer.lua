@@ -13,20 +13,23 @@ local packer_bootstrap = ensure_packer()
 
 return require("packer").startup(function(use)
   use "wbthomason/packer.nvim"
-  use "overcache/NeoSolarized"
-  use "nvim-lualine/lualine.nvim"
-  use "terrortylor/nvim-comment"
-  use {"nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons"}
+
   use {"romgrk/barbar.nvim", requires = "nvim-tree/nvim-web-devicons"}
-  use {
-    "nvim-telescope/telescope.nvim",
-    tag = "0.1.1",
-    requires = {{"nvim-lua/plenary.nvim"}},
-  }
+  use "lewis6991/gitsigns.nvim"
+  use "nvim-lualine/lualine.nvim"
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
+  }
+  use "echasnovski/mini.pairs"
+  use "overcache/NeoSolarized"
+  use "terrortylor/nvim-comment"
+  use {"nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons"}
+  use {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.1",
+    requires = {{"nvim-lua/plenary.nvim"}},
   }
 
   if packer_bootstrap then

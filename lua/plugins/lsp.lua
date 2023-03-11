@@ -8,7 +8,7 @@ require("mason-lspconfig").setup({
     "lua_ls",
     "clangd",
     "hls",
-    "pylsp",
+    "pyright",
     "rust_analyzer",
     "texlab",
   }
@@ -32,11 +32,11 @@ require("lspconfig").clangd.setup {
   on_attach = on_attach
 }
 
-require("lspconfig").hls.setup {
+require("lspconfig").pyright.setup {
   on_attach = on_attach
 }
 
-require("lspconfig").pylsp.setup {
+require("lspconfig").hls.setup {
   on_attach = on_attach
 }
 
